@@ -1,4 +1,4 @@
-<label class="form-switch" id="dark">
+<label class="form-switch" onclick="myFunction()">
   <input type="checkbox">
   <i></i>
   Select Me
@@ -62,4 +62,23 @@
 .form-switch input:checked + i::before { transform: translate3d(18px, 2px, 0) scale3d(0, 0, 0); }
 
 .form-switch input:checked + i::after { transform: translate3d(22px, 2px, 0); }
+
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 </style>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
