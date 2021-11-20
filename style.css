@@ -75,7 +75,6 @@ body {
 }
 
 .top-right {
-  position: fixed;
   top: 12px;
   right: 3px;
   }
